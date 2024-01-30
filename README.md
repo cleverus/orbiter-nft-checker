@@ -1,5 +1,4 @@
-# orbiter-nft-checker
-Orbiter NFT checker
+# Orbiter NFT checker
 
 EVM wallets to wallets.txt each on a new line
 
