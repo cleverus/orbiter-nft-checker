@@ -43,7 +43,7 @@ const ABI = JSON.parse(fs.readFileSync('ABI.json', 'utf8'));
     fs.writeFileSync(`./result.csv`, `${title_row.join(';')}`);
 
     for (const i in lines) {
-      const wallet = lines[i];
+      const wallet = lines[i].replace(/\r/, '');
       const wallet_row = [wallet];
       for (const id in ORBITER_NFT) {
         await new Promise((resolve) => setTimeout(resolve, 30));
